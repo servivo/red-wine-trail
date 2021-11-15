@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me👩</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body {
+    	margin: 0;
+    	background-color: #FFEEDD;
+    }
+    .textbox-1 {
+    	font-size: 1.25em;
+        font-family: Garamond;
+    	text-align: justify;
+        border-radius: 10px;
+
+    }
+    .row {
+    	display: flex;
+    	justify-content:space-around;
+    	padding:25px 0 ;
+    	max-width:800px;
+    	margin:auto;
+
+
+    }
+    .w50 {
+    	flex: 0 0 45%;
+    	background: #fff2e6;
+    }
+
+    .object-fit{
+    	overflow:hidden;
+    	position:relative;
+        border-radius: 10px;
+    }
+    .object-fit img{
+    	position: absolute;
+    	top:50%;
+    	left:50%;
+    	height:auto;
+    	width:auto;
+    	min-width:100%;
+    	min-height:100%;
+    	transform:translate(-50%, -50%);
+    }
+    @supports (object-fit: cover) {
+      .object-fit img  {
+        position: static;
+        height: 420px;
+        width: 350px;
+        transform: none;
+        object-fit: cover;
+      }
+      .object-fit {
+        font-family: Garamond;
+        font-size: 1.25em;
+        text-align: justify;
+      }
+       h1 {
+              text-shadow: 5px 5px 10px rgba(151, 27, 29, 0.4);
+    color: #971b1d;
+    text-align: center;
+    font-family: Garamond;
+
+     }
+     h2 {
+         text-align: center;
+         font-family: Garamond;
+     }
+
+    footer {
+        text-align: center;
+        font-family: monospace;
+        padding-top: 10px;
+            text-shadow: 5px 5px 10px rgba(151, 27, 29, 0.4);
+    color: #971b1d;
+    }
+span {text-align: center;}
+    span:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    a {text-decoration: none;
+    text-align: center;}
+    
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 160px;
+      font-family: Garamond;
+      background-color:rgba(151, 27, 29, 0.4);
+      height: 100%;
+      position: fixed;
+      overflow: auto;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color:#971b1d;
+      color: white;
+    }
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  color: #971b1d;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+.active {
+  background-color: rgba(151, 27, 29, 0.164);
+  }
+  </style>
+   <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="https://redwinetrail.000webhostapp.com/pics.html">More pictures</a></li>
+  <li><a href="trail.html">Trail map</a></li>
+   <li><a class="active" href="contact.html">Contact me</a></li>
+  
+  
+</ul>
+  <h1>Hello, I am Bea!</h1>
+  <h2>The person behind this page👩</h2>
+
+  <div class="row">
+    <div class="w50 object-fit"> <img src="https://i.ibb.co/2ZcfFzr/20200701-181904-01.jpg"  width="100%"> </div>
+  <div class="w50 textbox-1">
+    I am Beatriz Matafora, an avid traveller and hobby photographer based in Germany. </br> I have done the trail of the Red Wine in November 2020 myself and was therefore heartbroken to hear the news about the floods and destruction in the Ahr Valley. Hence why I decided to dedicate the final project of my HTML/CSS course to it! I hope it motivates more people to visit it.
+        </br>I aim to develop further my coding skills while exploring the world and finishing my PhD on political education 🤓. I have been to over 35 countries and photography is one of my biggest passions. So if you're curious on what my latest photos and research papers are, make sure to check my Instagram and LinkedIn.  </p>
+  </div>
+  
+</div>
+
+
+
+
+<center><a href="https://www.instagram.com/servivodigno" class="fa fa-instagram"></a>
+<a href="https://www.linkedin.com/in/beatriz-matafora-bab991108/" class="fa fa-linkedin"></a></center>
+</html>

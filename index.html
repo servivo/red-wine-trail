@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Wine Trail 🍷</title>
+  </head>
+  <style>
+     html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body {
+    	margin: 0;
+    	background-color: #FFEEDD;
+    }
+    .textbox-1 {
+    	font-size: 1.25em;
+        font-family: Garamond;
+    	text-align: justify;
+        border-radius: 10px;
+
+    }
+    .row {
+    	display: flex;
+    	justify-content:space-around;
+    	padding:25px 0 ;
+    	max-width:800px;
+    	margin:auto;
+
+
+    }
+    .w50 {
+    	flex: 0 0 45%;
+    	background: #fff2e6;
+    }
+
+    .object-fit{
+    	overflow:hidden;
+    	position:relative;
+        border-radius: 10px;
+    }
+    .object-fit img{
+    	position: absolute;
+    	top:50%;
+    	left:50%;
+    	height:auto;
+    	width:auto;
+    	min-width:100%;
+    	min-height:100%;
+    	transform:translate(-50%, -50%);
+    }
+    @supports (object-fit: cover) {
+      .object-fit img  {
+        position: static;
+        height: 320px;
+        width: 250px;
+        transform: none;
+        object-fit: cover;
+      }
+      .object-fit {
+        font-family: Garamond;
+        font-size: 1.25em;
+        text-align: justify;
+      }
+       h1 {
+              text-shadow: 5px 5px 10px rgba(151, 27, 29, 0.4);
+    color: #971b1d;
+    text-align: center;
+    font-family: Garamond;
+
+     }
+     h2 {
+         text-align: center;
+         font-family: Garamond;
+     }
+
+    footer {
+        text-align: center;
+        font-family: monospace;
+        padding-top: 10px;
+            text-shadow: 5px 5px 10px rgba(151, 27, 29, 0.4);
+    color: #971b1d;
+    }
+
+    span:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    a {text-decoration: none;}
+    a:hover {text-decoration: underline;
+    cursor: pointer;}
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 160px;
+      font-family: Garamond;
+      background-color:rgba(151, 27, 29, 0.4);
+      height: 100%;
+      position: fixed;
+      overflow: auto;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #971b1d;
+      color: white;
+    }
+    .active {
+      background-color: rgba(151, 27, 29, 0.164);
+      
+}
+   button {display: block;
+margin: 0 auto 10px auto;
+font-size: 15px;
+padding: 10px;
+background: transparent;
+background: transparent;
+border: 1px solid darkred;
+border-radius: 10px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+transition: all 200ms ease-in-out }
+
+
+button:hover {
+    background:darkred;
+    color: white;
+    cursor: pointer;}
+    }
+  </style>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="pics.html">More pictures</a></li>
+    <li><a href="trail.html">Trail map</a></li>
+    <li><a href="contact.html">Contact me</a></li>
+  </ul>
+  <h1>Rotweinwanderweg</h1>
+  <h2>Hiking trail of the red wine 🍷</h2>
+
+  <div class="row">
+    <div class="w50 textbox-1">
+      <p>
+        The Red Wine Trail runs high above the floor of the Ahr Valley linking
+        the wine villages of the Ahr wine region in Germany. The route of the
+        hiking trail leads along the Ahr for a total length of around 36
+        kilometers from the Are castle ruins via <b>Mayschoss</b>, <b>Rech</b>,
+        <b>Dernau</b> to the former <b>Marienthal</b> monastery,
+        <b>Walporzheim</b>, the Roman villa near <b>Ahrweiler</b>, via
+        <b>Heppingen</b> to the square of <b>Bad Bodendorf</b>. Most of the
+        trail runs through the open vineyards on the slopes of the Ahr Valley.
+        Many parts of the path are tarmacked because they are used by
+        agricultural vehicles so special hiking equipment is not necessary.
+      </p>
+    </div>
+    <div class="w50 object-fit">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/344/original/20201107_140017.jpg?1634730217" width="100%" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="w50 object-fit">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/349/original/20201107_112414.jpg?1634730637"
+        alt="broken image"
+        width="100%"
+      />
+    </div>
+    <div class="w50 textbox-1">
+      <p>
+        On July 14th 2021 the pictoresque villages of the Ahr valley have been
+        affected by catastrophic floods, the deadliest natural disaster in
+        Germany since 1962. The topography of Ahr valley, with some sections
+        resembling gorges, may have exacerbated the effects of the heavy
+        rainfall. The river Ahr rose, destroying many buildings and causing at
+        least 110 deaths in Ahrweiler district.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="w50 textbox-1">
+      <p>
+        Even though the tourism infra structure is heavily damaged, the hiking
+        trail remains <b>intact</b>! This is why the villages of Dernau, Rech
+        and Mayschoß are inviting visitors to the hiking trail. On the weekends
+        of October they are organizing stands with food and wine along the trail
+        and have prepared special wine glasses and armbands for the hikers. The
+        Ahr valley is a beautiful destination, the trail is suitable for people
+        of all ages and physical conditions. With your visit, you will support
+        everyone in the region. Let’s help rebuild it together.
+      </p>
+    </div>
+    <div class="w50 object-fit">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/350/original/20201107_121123.jpg?1634730683"
+        alt="broken image"
+        width="100%"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="w50 textbox-1">
+      Click
+      <a href="https://www.rotweinwanderweg.de/" target="_blank">here</a> for
+      more information on the Red Wine Trail
+    </div>
+    <div class="w50 object-fit">
+      Click
+      <span
+        onclick="alert('You can make a bank transfer to:\n Spendenkonto des Kreises Ahrweiler \n Bank: Kreissparkasse Ahrweiler \n BIC: MALADE51AHR \n IBAN: DE86 5775 1310 0000 3394 57 \n Transfer keyword: Hochwasser')"
+        >here</span
+      >
+      to make a donation to the Ahr Valley Villages
+    </div>
+  </div>
+<center><button>Plan your hike</button></center>
+
+  <footer>Pictures and code by BM</footer>
+<script>
+
+   function interact() {
+        let question = prompt("Do you want more maps of the Red Wine Trail?");
+        question = question.toLowerCase();
+        
+        if (question === "yes") {
+          prompt("Ok, please write your e-mail down below so we can send you the maps");
+
+} 
+        
+        else {
+          alert ("Ok, have a nice hike!")
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", interact);
+ </script>
+
+</html>

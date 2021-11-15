@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pictures of the trail 📷</title>
+  </head>
+  <style>
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	margin: 0;
+	background-color: #FFEEDD;
+}
+.textbox-1 {
+	font-size: 1.25em;
+    font-family: Garamond;
+	text-align: justify;
+    border-radius: 10px;
+    
+}
+.row {
+	display: flex;
+	justify-content:space-around;
+	padding:25px 0 ;
+	max-width:800px;
+	margin:auto;
+    
+	
+}
+.w50 {
+	flex: 0 0 45%;
+	background: #fff2e6;
+}
+
+.object-fit{
+	overflow:hidden;
+	position:relative;
+    border-radius: 10px;
+}
+.object-fit img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	height:auto;
+	width:auto;
+	min-width:100%;
+	min-height:100%;
+	transform:translate(-50%, -50%);
+  
+
+}
+
+@supports (object-fit: cover) {
+  .object-fit img  {
+    position: static;
+    height: 420px;
+    width: 350px;
+    transform: none;
+    object-fit: cover;
+  }
+  .object-fit {
+    font-family: Garamond;
+    font-size: 1.25em;
+    text-align: justify;
+  }
+   h1 {
+          text-shadow: 5px 5px 10px rgba(151, 27, 29, 0.4);
+color: #971b1d;
+text-align: center;
+font-family: Garamond;
+
+ }
+ h2 {
+     text-align: center;
+     font-family: Garamond;
+ }
+
+footer {
+    text-align: center;
+    font-family: monospace;
+    padding-top: 10px;
+        text-shadow: 5px 5px 10px rgba(151, 27, 29, 0.4);
+color: #971b1d; 
+}
+
+span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a {text-decoration: none;}
+a:hover {text-decoration: underline;
+cursor: pointer;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 160px;
+  font-family: Garamond;
+  background-color:rgba(151, 27, 29, 0.4);
+  height: 100%; 
+  position: fixed; 
+  overflow: auto; 
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #971b1d;
+  color: white;
+}
+.active {
+  background-color: rgba(151, 27, 29, 0.164);
+  }
+
+  </style>
+   <ul>
+ <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="pics.html">More pictures</a></li>
+  <li><a href="trail.html">Trail map</a></li>
+   <li><a href="contact.html">Contact me</a></li>
+  
+</ul>
+  <h1>More pictures of the trail of the Red Wine 🍷</h1>
+  <h2>All pictures by BM</h2>
+
+
+
+  <div class="row">
+  <div class="w50 object-fit"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/343/original/20201107_114108.jpg?1634730169" width="100%"> 
+    
+  </div>
+  <div class="w50 object-fit"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/345/original/20201107_131556.jpg?1634730435"  width="100%"> </div>
+</div>
+
+<div class="row">
+  <div class="w50 object-fit"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/341/original/20201107_124318.jpg?1634730019" width="100%"> 
+    
+  </div>
+  <div class="w50 object-fit"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/347/original/20201107_111915.jpg?1634730550"  width="100%"> </div>
+</div>
+
+<div class="row">
+  <div class="w50 object-fit"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/348/original/20201107_112026.jpg?1634730593" width="100%"> 
+    
+  </div>
+  <div class="w50 object-fit"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/346/original/20201107_105323.jpg?1634730492"  width="100%"> </div>
+</div>
+<footer>Pictures and code by BM</footer>
+ 
+</html>
