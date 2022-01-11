@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Wine Trail 🍷</title>
   </head>
@@ -39,9 +40,12 @@
     }
 
     .object-fit{
-    	overflow:hidden;
+    	overflow: hidden;
     	position:relative;
         border-radius: 10px;
+    }
+    .container {
+      border-radius: 10px;
     }
     .object-fit img{
     	position: absolute;
@@ -149,8 +153,9 @@ button:hover {
   <h1>Rotweinwanderweg</h1>
   <h2>Hiking trail of the red wine 🍷</h2>
 
+  <div class="container">
   <div class="row">
-    <div class="w50 textbox-1">
+    <div class="col-sm-6 w50 textbox-1">
       <p>
         The Red Wine Trail runs high above the floor of the Ahr Valley linking
         the wine villages of the Ahr wine region in Germany. The route of the
@@ -164,20 +169,22 @@ button:hover {
         agricultural vehicles so special hiking equipment is not necessary.
       </p>
     </div>
-    <div class="w50 object-fit">
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/344/original/20201107_140017.jpg?1634730217" width="100%" />
+    <div class="col-sm-6 w50 object-fit">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/344/original/20201107_140017.jpg?1634730217" width="100%" border-radius="10" />
     </div>
   </div>
+  </div>
 
+  <div class="container">
   <div class="row">
-    <div class="w50 object-fit">
+    <div class="col-sm-6 w50 object-fit">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/349/original/20201107_112414.jpg?1634730637"
         alt="broken image"
         width="100%"
       />
     </div>
-    <div class="w50 textbox-1">
+    <div class="col-sm-6 w50 textbox-1">
       <p>
         On July 14th 2021 the pictoresque villages of the Ahr valley have been
         affected by catastrophic floods, the deadliest natural disaster in
@@ -188,9 +195,10 @@ button:hover {
       </p>
     </div>
   </div>
-
+  </div>
+<div class="container">
   <div class="row">
-    <div class="w50 textbox-1">
+    <div class="col-sm-6 w50 textbox-1">
       <p>
         Even though the tourism infra structure is heavily damaged, the hiking
         trail remains <b>intact</b>! This is why the villages of Dernau, Rech
@@ -202,7 +210,7 @@ button:hover {
         everyone in the region. Let’s help rebuild it together.
       </p>
     </div>
-    <div class="w50 object-fit">
+    <div class="col-sm-6 w50 object-fit">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/350/original/20201107_121123.jpg?1634730683"
         alt="broken image"
@@ -210,14 +218,15 @@ button:hover {
       />
     </div>
   </div>
-
+  </div>
+<div class="container">
   <div class="row">
-    <div class="w50 textbox-1">
+    <div class="col-sm-6 w50 textbox-1">
       Click
       <a href="https://www.rotweinwanderweg.de/" target="_blank">here</a> for
       more information on the Red Wine Trail
     </div>
-    <div class="w50 object-fit">
+    <div class="col-sm-6 w50 object-fit">
       Click
       <span
         onclick="alert('You can make a bank transfer to:\n Spendenkonto des Kreises Ahrweiler \n Bank: Kreissparkasse Ahrweiler \n BIC: MALADE51AHR \n IBAN: DE86 5775 1310 0000 3394 57 \n Transfer keyword: Hochwasser')"
@@ -225,6 +234,7 @@ button:hover {
       >
       to make a donation to the Ahr Valley Villages
     </div>
+  </div>
   </div>
 <center><button>Plan your hike</button></center>
 
